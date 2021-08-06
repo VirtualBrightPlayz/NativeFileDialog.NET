@@ -24,7 +24,7 @@ EXPORT(nfdresult_t) NFD_DLL_OpenDialog(const nfdchar_t* filterList,
 EXPORT(nfdresult_t) NFD_DLL_OpenDialogMultiple(const nfdchar_t* filterList,
     const nfdchar_t* defaultPath,
     nfdpathset_t* outPaths) {
-    return NFD_DLL_OpenDialogMultiple(filterList, defaultPath, outPaths);
+    return NFD_OpenDialogMultiple(filterList, defaultPath, outPaths);
 }
 
 
