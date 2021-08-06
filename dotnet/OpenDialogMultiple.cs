@@ -7,7 +7,7 @@ namespace NativeFileDialog
 {
     public static class OpenDialogMultiple
     {
-        internal static Result Open(string filterList, string defaultPath, out IEnumerable<string> outPaths) {
+        public static Result Open(string filterList, string defaultPath, out IEnumerable<string> outPaths) {
             outPaths = Enumerable.Empty<string>();
             unsafe {
                 Dll.nfdpathset_t outPathSet;
