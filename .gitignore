@@ -351,3 +351,7 @@ MigrationBackup/
 
 # Rider
 .idea/
+
+# Build results
+*.dll
+*.exe
