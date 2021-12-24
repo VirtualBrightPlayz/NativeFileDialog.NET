@@ -39,7 +39,7 @@ namespace NativeFileDialog
                             nfdchar_t **outPath ); */
         
         [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-        internal static extern nfdresult_t NFD_DLL_PickFolder(IntPtr defaultPath, IntPtr outPath);
+        internal static extern unsafe nfdresult_t NFD_DLL_PickFolder(IntPtr defaultPath, byte** outPath);
         /* nfdresult_t NFD_DLL_PickFolder( const nfdchar_t *defaultPath,
                             nfdchar_t **outPath); */
 
