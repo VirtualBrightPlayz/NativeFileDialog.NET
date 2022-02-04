@@ -28,7 +28,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="../dynamicLib/VS2019/lib/$(Configuration)/$(Platform)/nfd.dll" CopyToOutputDirectory="PreserveNewest" />
+      <Content Include="../dynamicLib/VS2019/dll/$(Configuration)/$(Platform)/nfd.dll" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
 
 </Project>
