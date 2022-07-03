@@ -2,7 +2,7 @@ CC := gcc
 CFLAGS := -O2 -fPIC
 nfd.so: export.o
 	@echo "Building nfd.so"
-	@$(CC) export.o -shared -o nfd.so
+	@$(CC) export.o -L. -l:../../nativefiledialog/build/lib/Release/x64/libnfd.a -lgtk-3 -shared -o nfd.so
 
 export.o: nfd.a
 	@echo "Building export.o"
@@ -10,4 +10,5 @@ export.o: nfd.a
 
 nfd.a:
 	@echo "Building nfd.a"
-	@make ../../nativefiledialog/build/gmake_linux/
+	@make -C ../../nativefiledialog/build/gmake_linux/ clean
+	@make CFLAGS=-fPIC -C ../../nativefiledialog/build/gmake_linux/

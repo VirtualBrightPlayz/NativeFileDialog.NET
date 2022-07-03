@@ -3,9 +3,8 @@ using System.Runtime.InteropServices;
 
 namespace NativeFileDialog
 {
-    internal static class Dll
-    {
-        private const string DllName = "nfd.dll";
+    internal static class Dll {
+        private const string DllName = "nfd";
 
         [StructLayout(LayoutKind.Sequential)]
         internal struct nfdpathset_t {
