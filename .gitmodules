@@ -1,4 +1,4 @@
 [submodule "nativefiledialog"]
 	path = nativefiledialog
-	url = git@github.com:mlabbe/nativefiledialog
+	url = https://github.com/mlabbe/nativefiledialog.git
 	branch = devel
